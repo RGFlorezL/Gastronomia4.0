@@ -1,0 +1,6 @@
+{
+  "name": "Gastronomía 4.0",
+  "description": "Manual práctico y 6 bonos digitales para aplicar inteligencia artificial en cocina, panadería, docencia y emprendimientos gastronómicos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

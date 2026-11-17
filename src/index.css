@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-obsidian: #0B0A08;
+  --color-obsidian-soft: #14120E;
+  --color-obsidian-card: #1A1711;
+  --color-parchment: #F7F4EC;
+  --color-parchment-deep: #ECE6D8;
+  --color-ink: #171510;
+  --color-ink-muted: #555046;
+  --color-gold: #D6B160;
+  --color-gold-bright: #F1D58F;
+  --color-gold-deep: #8A6824;
+  --color-sage: #2F7A5A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 84px;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  summary:focus-visible {
+    outline: 2px solid #D6B160;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
